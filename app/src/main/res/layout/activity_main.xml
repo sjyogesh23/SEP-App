@@ -1,110 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/loginbg">
+    android:background="@drawable/loginbg"
+    android:orientation="vertical">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/whitelogo"
-        android:layout_marginTop="160px"
-        />
+        android:layout_marginTop="220px"
+        android:src="@drawable/whitelogo"/>
+
     <LinearLayout
         android:layout_width="800px"
         android:layout_height="750px"
-        android:background="@drawable/shadebox"
         android:layout_gravity="center"
         android:layout_marginTop="75px"
+        android:background="@drawable/shadebox"
         android:gravity="center"
         android:orientation="vertical">
+
         <EditText
             android:layout_width="600px"
             android:layout_height="100px"
+            android:layout_marginBottom="50px"
             android:background="@drawable/ipbg"
             android:text="    User Name"
             android:textColor="#83000000"
-            android:textSize="14dp"
-            android:layout_marginBottom="50px"/>
+            android:textSize="14dp" />
+
         <EditText
             android:layout_width="600px"
             android:layout_height="100px"
             android:background="@drawable/ipbg"
             android:text="    Password"
             android:textColor="#83000000"
-            android:textSize="14dp"/>
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="600px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px">
+
             <LinearLayout
-                android:layout_width="600px"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50px">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center">
-                    <CheckBox
-                        android:layout_width="45px"
-                        android:layout_height="45px"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="  Remember Me"
-                        android:textColor="@color/white"
-                        android:textSize="12dp"
-                        />
-                </LinearLayout>
+                android:gravity="center">
+
+                <CheckBox
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:background="@drawable/ipbg2" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="         Forgot Password?"
+                    android:text="  Remember Me"
                     android:textColor="@color/white"
-                    android:textSize="12dp"
-                    />
-
-
+                    android:textSize="10dp" />
             </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:text="Forgot Password?"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+        </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="50px"
-        android:orientation="vertical"
-        android:layout_gravity="center">
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="800px"
             android:layout_height="110px"
+            android:layout_gravity="center"
             android:background="@drawable/ipbg"
-            android:gravity="center"
-            android:layout_gravity="center">
+            android:gravity="center">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="15px"
                 android:text="Log In"
-                android:textSize="16dp"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                android:layout_margin="15px"/>
+                android:textSize="16dp"
+                android:textStyle="bold" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="800px"
             android:layout_height="110px"
+            android:layout_gravity="center"
+            android:layout_marginTop="50px"
             android:background="@drawable/ipbg2"
             android:gravity="center"
-            android:layout_gravity="center"
-            android:orientation="horizontal"
-            android:layout_marginTop="50px">
+            android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="50px"
                 android:layout_height="50px"
-                android:background="@drawable/google"/>
+                android:background="@drawable/google" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="15px"
                 android:text="  Sign In with Google"
-                android:textSize="16dp"
                 android:textColor="@color/white"
-                android:textStyle="bold"
-                android:layout_margin="15px"/>
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </LinearLayout>
